@@ -14,6 +14,7 @@ import { AdminSidebarItem } from './components/layouts/admin-sidebar-item/admin-
 import { heroArrowRightStartOnRectangle, heroMagnifyingGlass } from '@ng-icons/heroicons/outline';
 import { heroBars3Solid, heroBuildingOffice2Solid, heroChartBarSolid, heroHomeSolid, heroKeySolid } from '@ng-icons/heroicons/solid';
 import { InputComponent } from './components/UI/input/input';
+import { TextareaComponent } from './components/UI/textarea/textarea';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { InputComponent } from './components/UI/input/input';
     AdminLayout,
     AdminSidebar,
     AdminSidebarItem,
-    InputComponent
+    InputComponent,
+    TextareaComponent
   ],
   imports: [
     CommonModule,
@@ -48,7 +50,8 @@ import { InputComponent } from './components/UI/input/input';
     SidebarItemComponent,
     ButtonComponent,
     HeaderComponent,
-    InputComponent
+    InputComponent,
+    TextareaComponent
   ]
 })
 export class SharedModule { }

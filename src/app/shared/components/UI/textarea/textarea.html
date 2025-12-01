@@ -1,0 +1,11 @@
+<textarea
+  [value]="value"
+  [rows]="rows"
+  (input)="onInput($event)"
+  (keyup)="onKeyUp($event)"
+  [placeholder]="placeholder"
+  [ngClass]="
+    'resize-none w-full bg-white border border-gray-200 rounded-lg focus:outline-gray-500 px-4 py-2 ' +
+    (className || '')
+  "
+></textarea>

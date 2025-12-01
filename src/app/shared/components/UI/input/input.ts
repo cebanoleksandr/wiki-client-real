@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class InputComponent {
   @Input() value: string | undefined;
-  @Input() class: string | undefined;
+  @Input() customClass: string | undefined;
   @Input() placeholder: string | undefined;
 
   @Output() valueChange = new EventEmitter<string>();
