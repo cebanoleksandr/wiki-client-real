@@ -1,0 +1,16 @@
+<div class="flex min-h-screen w-full bg-blue-50">
+  <div class="hidden md:block md:w-52 md:shrink-0">
+    <app-sidebar></app-sidebar>
+  </div>
+
+  <div class="flex-1 min-w-0">
+    <app-header></app-header>
+
+    <main>
+      <div class="px-10 pt-20">
+        <router-outlet></router-outlet>
+        <!-- <app-alert></app-alert> -->
+      </div>
+    </main>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<a *ngIf="link" [routerLink]="disabled ? null : to" [class]="classes">
+  <ng-content></ng-content>
+</a>
+
+<button *ngIf="!link" [disabled]="disabled" [class]="classes">
+  <ng-content></ng-content>
+</button>

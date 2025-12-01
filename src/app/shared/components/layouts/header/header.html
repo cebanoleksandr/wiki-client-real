@@ -1,0 +1,52 @@
+<header class="fixed left-0 md:left-52 right-0 top-0 z-10 py-4 px-10 flex items-center justify-between bg-blue-50">
+  <div class="flex items-center w-full">
+
+    <!-- Mobile burger -->
+    <button 
+      class="block md:hidden mr-3 text-blue-600 cursor-pointer"
+      (click)="isMobileMenuOpen = true"
+    >
+      <ng-icon 
+        name="heroBars3Solid" 
+        class="text-4xl" 
+      ></ng-icon>
+    </button>
+
+    <div class="block md:flex items-center gap-2 w-full">
+      <span class="relative">
+        <input
+          placeholder="Пошук..."
+          class="md:w-80 px-9 py-2 rounded border border-gray-300"
+        />
+
+        <span class="absolute pt-1 top-1/2 left-3 -translate-y-1/2 text-gray-400">
+          <ng-icon name="heroMagnifyingGlass" class="text-xl"></ng-icon>
+        </span>
+      </span>
+    </div>
+  </div>
+
+  <!-- Desktop logout button -->
+  <div class="hidden md:flex items-center gap-8">
+    <app-button
+      mode="primary"
+      (click)="isLogoutPopupVisible = true"
+    >
+      <ng-icon name="heroArrowRightStartOnRectangle" class="text-xl inline-block"></ng-icon>
+      Logout
+    </app-button>
+  </div>
+
+  <!-- Popup -->
+  <!-- <app-logout-popup
+    [isVisible]="isLogoutPopupVisible"
+    (close)="isLogoutPopupVisible = false"
+    (logout)="handleLogout()"
+  ></app-logout-popup> -->
+
+  <!-- Mobile Menu -->
+  <!-- <app-mobile-menu
+    [isOpen]="isMobileMenuOpen"
+    (close)="isMobileMenuOpen = false"
+  ></app-mobile-menu> -->
+</header>

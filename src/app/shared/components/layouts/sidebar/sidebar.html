@@ -1,0 +1,13 @@
+<div class="fixed flex flex-col justify-between left-0 top-0 w-52 h-screen p-2 bg-gray-800 z-2 border-r border-r-white">
+  <div>
+    <a routerLink="/main/dashboard" class="text-white font-bold text-3xl p-2 block">
+      WIKI main
+    </a>
+
+    <ul class="h-4/5 mb-2.5 mt-7 overflow-y-auto">
+      <li *ngFor="let item of sidebarItems">
+        <app-sidebar-item [item]="item"></app-sidebar-item>
+      </li>
+    </ul>
+  </div>
+</div>
