@@ -1,0 +1,21 @@
+<div *ngIf="alert?.text" class="fixed bottom-4 right-4 z-50">
+  <div
+    class="text-white px-4 py-3 rounded shadow-lg flex items-center gap-2 transition-all duration-300"
+    [ngClass]="modeStyles[alert?.mode || 'info']"
+  >
+    <span class="flex-1">{{ alert?.text }}</span>
+
+    <button (click)="close()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-5 h-5 text-white hover:text-gray-200"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+</div>

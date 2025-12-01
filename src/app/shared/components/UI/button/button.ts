@@ -9,7 +9,7 @@ import { Component, Input } from '@angular/core';
 export class ButtonComponent {
   @Input() link: boolean = false;
   @Input() to: string = '/';
-  @Input() mode: 'success' | 'error' | 'warning' | 'primary' | '' = '';
+  @Input() mode: 'success' | 'error' | 'warning' | 'primary' | 'admin' | '' = '';
   @Input() disabled: boolean = false;
   @Input() full: boolean = false;
   @Input() class: string = '';
@@ -54,8 +54,13 @@ export class ButtonComponent {
           break;
 
         case 'primary':
-          modeClasses = ['bg-gray-500', 'border', 'border-gray-500', 'text-white'];
-          hoverClasses = ['hover:bg-gray-600', 'hover:border-gray-600', 'active:bg-gray-700'];
+          modeClasses = ['bg-gray-800', 'border', 'border-gray-800', 'text-white'];
+          hoverClasses = ['hover:bg-gray-700', 'hover:border-gray-700', 'active:bg-gray-600'];
+          break;
+
+        case 'admin':
+          modeClasses = ['bg-blue-500', 'border', 'border-blue-500', 'text-white'];
+          hoverClasses = ['hover:bg-blue-600', 'hover:border-blue-600', 'active:bg-blue-700'];
           break;
 
         default:

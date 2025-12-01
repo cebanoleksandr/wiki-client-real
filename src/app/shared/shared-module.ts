@@ -15,6 +15,7 @@ import { heroArrowRightStartOnRectangle, heroMagnifyingGlass } from '@ng-icons/h
 import { heroBars3Solid, heroBuildingOffice2Solid, heroChartBarSolid, heroHomeSolid, heroKeySolid } from '@ng-icons/heroicons/solid';
 import { InputComponent } from './components/UI/input/input';
 import { TextareaComponent } from './components/UI/textarea/textarea';
+import { AlertComponent } from './components/UI/alert/alert';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TextareaComponent } from './components/UI/textarea/textarea';
     AdminSidebar,
     AdminSidebarItem,
     InputComponent,
-    TextareaComponent
+    TextareaComponent,
+    AlertComponent
   ],
   imports: [
     CommonModule,
@@ -51,7 +53,8 @@ import { TextareaComponent } from './components/UI/textarea/textarea';
     ButtonComponent,
     HeaderComponent,
     InputComponent,
-    TextareaComponent
+    TextareaComponent,
+    AlertComponent
   ]
 })
 export class SharedModule { }
