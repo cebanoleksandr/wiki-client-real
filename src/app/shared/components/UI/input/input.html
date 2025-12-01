@@ -1,0 +1,11 @@
+<div class="relative">
+  <input
+    [value]="value"
+    (input)="onChange($event)"
+    [ngClass]="
+      `px-4 py-2 border border-gray-200 rounded-lg focus:outline-gray-500 bg-white ${class}`
+    "
+    [placeholder]="placeholder"
+  />
+  <ng-content></ng-content>
+</div>

@@ -54,8 +54,8 @@ export class ButtonComponent {
           break;
 
         case 'primary':
-          modeClasses = ['bg-indigo-500', 'border', 'border-indigo-500', 'text-white'];
-          hoverClasses = ['hover:bg-indigo-600', 'hover:border-indigo-600', 'active:bg-indigo-700'];
+          modeClasses = ['bg-gray-500', 'border', 'border-gray-500', 'text-white'];
+          hoverClasses = ['hover:bg-gray-600', 'hover:border-gray-600', 'active:bg-gray-700'];
           break;
 
         default:

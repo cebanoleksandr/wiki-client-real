@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   isLogoutPopupVisible = false;
   isMobileMenuOpen = false;
+  searchTerm = '';
 
   constructor(private router: Router) {}
 
