@@ -9,6 +9,8 @@ import { ISidebarItem } from '../../../models/sidebar.model';
 })
 export class SidebarComponent {
   sidebarItems: ISidebarItem[] = [
-    { title: 'Dashboard', icon: 'heroChartBarSolid', href: '/main/dashboard' },
+    { title: 'Dashboard', icon: 'heroChartBarSolid', href: '/dashboard' },
+    { title: 'Organisations', icon: 'heroBuildingOffice2Solid', href: '/organisations' },
+    { title: 'Roles', icon: 'heroKeySolid', href: '/roles' },
   ];
 }

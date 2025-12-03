@@ -10,9 +10,8 @@ import { UserDetail } from './users/pages/user-detail/user-detail';
 import { Notifications } from './notifications/pages/notifications/notifications';
 import { NotFound } from './not-found/pages/not-found/not-found';
 import { Dashboard } from './dashboard/pages/dashboard/dashboard';
-import { AdminUserDetail } from './admin-user-detail/pages/admin-user-detail/admin-user-detail';
 import { RouterModule } from '@angular/router';
-import { AdminDashboard } from './admin-dashboard/pages/admin-dashboard/admin-dashboard';
+import { SharedModule } from '../shared/shared-module';
 
 @NgModule({
   declarations: [
@@ -26,12 +25,11 @@ import { AdminDashboard } from './admin-dashboard/pages/admin-dashboard/admin-da
     Notifications,
     NotFound,
     Dashboard,
-    AdminUserDetail,
-    AdminDashboard
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ],
   exports: [
     Login,
@@ -44,7 +42,6 @@ import { AdminDashboard } from './admin-dashboard/pages/admin-dashboard/admin-da
     Notifications,
     NotFound,
     Dashboard,
-    AdminUserDetail
   ]
 })
 export class FeaturesModule { }
